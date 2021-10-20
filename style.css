@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid white;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(55, 140, 202, 1) 48%,
+    rgba(12, 170, 208, 1) 79%,
+    rgba(7, 163, 195, 1) 92%
+  );
+  font-family: "Exo 2", sans-serif;
+  color: white;
+}
+
+.location {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.iconApp {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.temperature {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#clock {
+  padding-top: 1rem;
+  font-size: 30px;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.temperature-description {
+  text-transform: capitalize;
+  font-size: 30px;
+  text-align: center;
+}
+
+span {
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-right: 5px;
+}
+
+.icon a {
+  color: white;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 568px) {
+  .wrapper {
+    width: 90%;
+    height: 90vh;
+  }
+
+  .location {
+    width: 90%;
+  }
+
+  .time h1 {
+    font-size: 1.5rem;
+  }
+
+  .iconApp img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #clock {
+    font-size: 1.5rem;
+  }
+}
